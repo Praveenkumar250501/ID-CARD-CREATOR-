@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ID Card</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .id-container {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+    .id-card {
+      width: 300px;
+      height: 450px;
+      border: 2px solid #d35400;
+      border-radius: 12px;
+      background: white;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 15px;
+    }
+    .header {
+      background: #e74c3c;
+      color: white;
+      font-weight: bold;
+      padding: 6px;
+      font-size: 14px;
+    }
+    .college-name {
+      color: #2c3e50;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .sub-text {
+      font-size: 12px;
+      color: #444;
+	  }
+	  .roll-no{
+	  font-size:15px;
+	  color:red;
+	  }
+    .photo {
+      margin: 10px 0;
+    }
+    .photo img {
+      width: 120px;
+      height: 140px;
+      border: 2px solid #d35400;
+      border-radius: 5px;
+    }
+    .details, .back-details {
+      text-align: left;
+      font-size: 14px;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+    .details p, .back-details p {
+      margin: 6px 0;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: green;
+      font-weight: bold;
+    }
+    .btn-container {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="id-container">
+
+    <div class="id-card" id="front">
+      <div class="header">SWAMI DAYANANDA College Of Arts & Science<br>(A unit if Swami Dayananda Educational Trust)<br>(approved by Government of Tamilnadu)</div>
+      <div class="college-name">(Affiliated to Bharathidasan University,Tiruchirappalli)</div>
+      <div class="sub-text">Manjakkudi - 612610, Tiruvarur Dt.</div>
+	  <div class="roll-no">IDENTITY CARD-STUDENT<br>18CS30</div>
+      
+      <div class="photo">
+        <img src="praveenimage.jpg" alt="Student Photo">
+      </div>
+
+      <div class="details">
+        <p><b>ID:</b> 18CS30</p>
+        <p><b>Name:</b> Praveenkumar P</p>
+        <p><b>Course:</b> B.Sc. Computer Science</p>
+        <p><b>Batch:</b> 2018 - 2021</p>
+      </div>
+
+      <div class="footer">Principal</div>
+    </div>
+
+    <div class="id-card" id="back">
+      <div class="back-details">
+        <p><b>Father’s Name:</b> K.T. Prabu</p><br><br>
+        <p><b>Address:</b> 168, East Street,<br><br> Thirubuvanam.</p><br><br><br>
+        <p><b>Contact No:</b> 9944502584</p><br><br>
+        <p><b>DOB:</b> 25.05.2001</p><br>
+        <p><b>Blood Group:</b> O+Ve</p><br>
+        <p><b>National Anti-Ragging Complaint Helpline<br>Toll-Free No:</b>1800-180-5522</p><br>
+        <p><b>If Found Please Return To:</b> <br>College (Ph: 04366-260300)</p><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button onclick="window.print()">Print</button>
+    <button onclick="downloadCard()">Download</button>
+  </div>
+</body>
+</html>
